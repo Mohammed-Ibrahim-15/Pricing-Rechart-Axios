@@ -21,7 +21,7 @@ const PhoneBar = () => {
                 console.log(phoneData)
                 setPhones(phoneData)
             })
-    }, {})
+    }, [])
     return (
         <div className='flex items-center justify-center my-12'>
             <BarChart width={600} height={200} data={phones}>
